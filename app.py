@@ -23,8 +23,8 @@ cors = CORS(app)
 Compress(app)
 
 load_dotenv()
-openai.api_key = "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"
-library_filename = "libraries/modified.json"
+openai.api_key = os.getenv("OPENAI_API_KEY")
+library_filename = os.getenv("LIBRARY_FILENAME")
 
 library = polymath.load_libraries(library_filename, True)
 config = polymath.host_config()
