@@ -38,9 +38,21 @@ LEGAL_OMIT_KEYS = set(
 
 
 def _load_data_file(file):
-    print(file)
-    with open(file, "r") as f:
-        return json.load(f)
+    #Open a file named numbers.txt
+    numbers_file = open(file,'r')
+
+    #read the numbers on the file
+    file_contents = numbers_file.read()
+
+    #Close the the numbers file
+    numbers_file.close()   
+    return json.loads(file_contents)
+   
+    # with open(file, "r",encoding='cp1252') as f:
+    #     print("*************************************************************")
+    #     print(f)
+    #     l = json.load(f)
+    #     return json.load(f)
 
 
 def canonical_id(bit_text, url=''):
