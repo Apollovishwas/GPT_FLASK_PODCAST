@@ -38,6 +38,7 @@ LEGAL_OMIT_KEYS = set(
 
 
 def _load_data_file(file):
+    print(file)
     with open(file, "r") as f:
         return json.load(f)
 
