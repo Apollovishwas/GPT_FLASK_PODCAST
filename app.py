@@ -24,7 +24,7 @@ Compress(app)
 
 load_dotenv()
 openai.api_key = "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"
-library_filename = "libraries\modified.json"
+library_filename = "libraries/modified.json"
 
 library = polymath.load_libraries(library_filename, True)
 config = polymath.host_config()
