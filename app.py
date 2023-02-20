@@ -23,8 +23,8 @@ cors = CORS(app)
 Compress(app)
 
 load_dotenv()
-openai.api_key = "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"
-library_filename = "libraries/sitemap-polymathgpt.000webhostapp.com-sitemap1.xml.json"
+openai.api_key = "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"
+library_filename = "libraries\modified.json"
 
 library = polymath.load_libraries(library_filename, True)
 config = polymath.host_config()
